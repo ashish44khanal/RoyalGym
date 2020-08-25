@@ -1,0 +1,402 @@
+@import "./header";
+@import "./variables";
+
+@mixin royalBtn($b_color, $b_color_dark) {
+  background-color: $b_color;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  &:hover {
+    background-color: $b_color_dark;
+    border-radius: 0;
+    transition: all 0.2s;
+  }
+}
+@mixin pageStatusBG($img) {
+  background: url($img);
+  color: white;
+  .topLayer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+  }
+}
+@mixin customRedLine($floatOpt) {
+  float: $floatOpt;
+  margin-right: 10px;
+  border-top: 4px solid #cc0000;
+  margin-top: 12px;
+}
+
+.redBtn {
+  @include royalBtn($redColor, $darkRed);
+}
+.leftMain {
+  background-color: #000000;
+  padding-left: 120px;
+  padding-top: 70px;
+  color: white;
+  height: 100vh;
+  .mainHead {
+    font-size: 55px;
+    padding: 10px 0;
+  }
+}
+
+.img-Container {
+  margin-top: 40px;
+  background: #cc0000;
+  padding: 20px 0 0 20px;
+}
+
+.rightMain {
+  background-color: #050505;
+  height: 100vh;
+}
+.customTopLayer {
+  @include pageStatusBG($aboutImg);
+}
+.customTopLayerService {
+  @include pageStatusBG($serviceImg);
+}
+
+.intropic {
+  width: 100%;
+}
+.img-Container:hover {
+  padding: 10px 0 0 10px;
+  transition: all 0.2s;
+}
+.introRight {
+  margin: 40px 0 0 20px;
+}
+.countdown {
+  margin: 60px 0;
+}
+.gymcount {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+}
+.gymcount p {
+  text-align: center;
+}
+.whiteTxt {
+  font-weight: bold;
+  text-align: center;
+}
+.awardImg {
+  width: 100%;
+}
+.redText {
+  font-weight: 600;
+  color: #cc0000;
+  padding-bottom: 20px;
+}
+.Awards {
+  margin-top: 50px;
+}
+.hrLine {
+  @include customRedLine(left);
+}
+.hrLine2 {
+  @include customRedLine(none);
+}
+.cardLine {
+  border-top: 4px solid #cc0000;
+  margin: 20px auto;
+}
+
+.testimonial {
+  background-color: #050505;
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  h2 {
+    color: $blue;
+    text-align: center;
+  }
+  p {
+    color: white;
+    text-align: center;
+    padding: 90px 120px 50px 120px;
+  }
+  .customer_img {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    img {
+      padding: 10px;
+    }
+    .feedbackImg2 {
+      width: 10%;
+      height: 10%;
+      opacity: 0.5;
+    }
+    .feedbackImg3 {
+      @extend .feedbackImg2;
+    }
+  }
+}
+.trainers {
+  margin-top: 120px;
+  .serviceBtn {
+    float: right;
+  }
+  .trainerInfo {
+    margin: 10px 0;
+    img {
+      z-index: -10;
+    }
+    .info {
+      transform: translateY(-100px);
+      z-index: 10;
+      padding: 10px;
+      color: white;
+      background: rgba(204, 0, 0, 1);
+      visibility: hidden;
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+}
+.serviceHead {
+  margin-top: 60px;
+}
+.serviceSection {
+  padding: 80px 40px;
+  .container-fluid {
+    background-color: black;
+    padding: 50px 0;
+
+    .card {
+      background-color: rgba(0, 8, 10, 1);
+      border-radius: 10px;
+      box-shadow: 1px 1px 2px 4px rgba(237, 242, 244, 0.09);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+
+      .img_section {
+        display: flex;
+        align-self: center;
+        padding: 40px;
+        .svgImg {
+          fill: #ffffff;
+        }
+      }
+      .infoSection {
+        padding: 10px;
+        padding-bottom: 20px;
+      }
+      .btn_section {
+        .redBtn {
+          width: 100%;
+          transform: translateY(10px);
+          visibility: hidden;
+        }
+        .cardBtnshow {
+          transform: translateY(-5px);
+          transition: transform 0.4s ease-in-out;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+// shoop css begins here
+.shopHeadSection {
+  margin: 50px;
+  .categoryBtn {
+    margin: 20px;
+    .catBtn {
+      border: 2px solid $redColor;
+      background-color: #ffffff;
+      padding: 8px 20px;
+      margin: 5px;
+      margin-bottom: 10px;
+      color: $redColor;
+      border-radius: 10px;
+      font-weight: 450;
+
+      &:hover {
+        background-color: $redColor;
+        color: white;
+        transition: all 0.4s;
+      }
+    }
+  }
+}
+.shopProducts {
+  margin: 40px 0;
+  a:hover {
+    text-decoration: none;
+  }
+  .productCard {
+    box-shadow: 1px 1px 4px 3px rgba(0, 12, 12, 0.09);
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 15px 0;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: 1px 1px 4px 3px rgba(0, 12, 12, 0.3);
+      transition: all 0.5s;
+    }
+    .myproductInfo {
+      display: flex;
+      align-items: center;
+      .productImg {
+        width: 40%;
+        img {
+          width: 100%;
+        }
+      }
+      .productInfo {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.productDetail {
+  background-color: rgba(248, 248, 248, 0.8);
+  padding: 80px 0;
+
+  .pdetails {
+    background-color: white;
+    margin: 20px 0;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 2px 2px rgba(230, 232, 233, 0.9);
+  }
+
+  .pdetail_img {
+    img {
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+// blog css starts here
+.news {
+  margin: 80px 0;
+  .newsCard {
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+    margin: 20px 0;
+
+    .imgContainer {
+      img {
+        z-index: -100;
+      }
+    }
+    .publishDate {
+      display: inline-block;
+      z-index: 100;
+      background: $redColor;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      margin: -40px 0 0 30px;
+      &:hover {
+        background-color: $darkRed;
+        transition: all 0.4s;
+      }
+    }
+    .newsInfo {
+      padding: 20px 30px;
+    }
+    .newsIcons {
+      padding: 0 30px 30px 30px;
+      .liked {
+        font-size: 20px;
+        padding: 0 10px 0 0;
+        border-right: 4px solid gray;
+      }
+      .newsCat {
+        font-size: 20px;
+        padding: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+// news nav css starts
+
+.newsNav {
+  margin: 80px 0;
+  .searchNews {
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    input {
+      height: 60px;
+      padding: 20px;
+    }
+    .search {
+      width: 100%;
+      border: 2px solid $redColor;
+      background-color: white;
+      padding: 15px;
+      color: $redColor;
+      letter-spacing: 5px;
+      margin-top: 15px;
+      &:hover {
+        background-color: $redColor;
+        color: white;
+        transition: all 0.7s;
+      }
+    }
+  }
+
+  .newsCategorySection {
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin: 20px 0;
+  }
+
+  .popularPosts {
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin: 20px 0;
+  }
+}
+.searchMbl {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .myproductInfo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .searchMbl {
+    display: block;
+
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    input {
+      height: 60px;
+      padding: 20px;
+    }
+    .search {
+      width: 100%;
+      border: 2px solid $redColor;
+      background-color: white;
+      padding: 15px;
+      color: $redColor;
+      letter-spacing: 5px;
+      margin-top: 15px;
+      &:hover {
+        background-color: $redColor;
+        color: white;
+        transition: all 0.7s;
+      }
+    }
+  }
+}

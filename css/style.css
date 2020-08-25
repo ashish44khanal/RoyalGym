@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  background-color: #000000;
+}
+
+.navigationMenu {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 40px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-item {
+  padding: 0 5px;
+}
+
+.gymLogo {
+  width: 20%;
+}
+
+.navbar-brand {
+  margin-left: 10px;
+}
+
+.loginImg {
+  float: right;
+  margin-right: -15px;
+  width: 40%;
+}
+
+.logoContainer {
+  padding-top: 20px;
+}
+
+.customContact {
+  background-color: #0066ff;
+  margin-top: 10px;
+  width: 200px;
+  padding: 0 5px;
+  padding-top: 5px;
+  border-radius: 50px;
+}
+
+/* footer css starts here  */
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .loginImg {
+    width: 70%;
+  }
+}
+
+.redBtn {
+  background-color: #cc0000;
+  padding: 10px 25px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.redBtn:hover {
+  background-color: #b20000;
+  border-radius: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.leftMain {
+  background-color: #000000;
+  padding-left: 120px;
+  padding-top: 70px;
+  color: white;
+  height: 100vh;
+}
+
+.leftMain .mainHead {
+  font-size: 55px;
+  padding: 10px 0;
+}
+
+.img-Container {
+  margin-top: 40px;
+  background: #cc0000;
+  padding: 20px 0 0 20px;
+}
+
+.rightMain {
+  background-color: #050505;
+  height: 100vh;
+}
+
+.customTopLayer {
+  background: url("../images/aboutusbg.png");
+  color: white;
+}
+
+.customTopLayer .topLayer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+}
+
+.customTopLayerService {
+  background: url("../images/servicesBg.png");
+  color: white;
+}
+
+.customTopLayerService .topLayer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+}
+
+.intropic {
+  width: 100%;
+}
+
+.img-Container:hover {
+  padding: 10px 0 0 10px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.introRight {
+  margin: 40px 0 0 20px;
+}
+
+.countdown {
+  margin: 60px 0;
+}
+
+.gymcount {
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+}
+
+.gymcount p {
+  text-align: center;
+}
+
+.whiteTxt {
+  font-weight: bold;
+  text-align: center;
+}
+
+.awardImg {
+  width: 100%;
+}
+
+.redText {
+  font-weight: 600;
+  color: #cc0000;
+  padding-bottom: 20px;
+}
+
+.Awards {
+  margin-top: 50px;
+}
+
+.hrLine {
+  float: left;
+  margin-right: 10px;
+  border-top: 4px solid #cc0000;
+  margin-top: 12px;
+}
+
+.hrLine2 {
+  float: none;
+  margin-right: 10px;
+  border-top: 4px solid #cc0000;
+  margin-top: 12px;
+}
+
+.cardLine {
+  border-top: 4px solid #cc0000;
+  margin: 20px auto;
+}
+
+.testimonial {
+  background-color: #050505;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px;
+}
+
+.testimonial h2 {
+  color: #0066ff;
+  text-align: center;
+}
+
+.testimonial p {
+  color: white;
+  text-align: center;
+  padding: 90px 120px 50px 120px;
+}
+
+.testimonial .customer_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.testimonial .customer_img img {
+  padding: 10px;
+}
+
+.testimonial .customer_img .feedbackImg2, .testimonial .customer_img .feedbackImg3 {
+  width: 10%;
+  height: 10%;
+  opacity: 0.5;
+}
+
+.trainers {
+  margin-top: 120px;
+}
+
+.trainers .serviceBtn {
+  float: right;
+}
+
+.trainers .trainerInfo {
+  margin: 10px 0;
+}
+
+.trainers .trainerInfo img {
+  z-index: -10;
+}
+
+.trainers .trainerInfo .info {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  z-index: 10;
+  padding: 10px;
+  color: white;
+  background: #cc0000;
+  visibility: hidden;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.serviceHead {
+  margin-top: 60px;
+}
+
+.serviceSection {
+  padding: 80px 40px;
+}
+
+.serviceSection .container-fluid {
+  background-color: black;
+  padding: 50px 0;
+}
+
+.serviceSection .container-fluid .card {
+  background-color: #00080a;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 2px 4px rgba(237, 242, 244, 0.09);
+          box-shadow: 1px 1px 2px 4px rgba(237, 242, 244, 0.09);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.serviceSection .container-fluid .card .img_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 40px;
+}
+
+.serviceSection .container-fluid .card .img_section .svgImg {
+  fill: #ffffff;
+}
+
+.serviceSection .container-fluid .card .infoSection {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.serviceSection .container-fluid .card .btn_section .redBtn {
+  width: 100%;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  visibility: hidden;
+}
+
+.serviceSection .container-fluid .card .btn_section .cardBtnshow {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  visibility: visible;
+}
+
+.shopHeadSection {
+  margin: 50px;
+}
+
+.shopHeadSection .categoryBtn {
+  margin: 20px;
+}
+
+.shopHeadSection .categoryBtn .catBtn {
+  border: 2px solid #cc0000;
+  background-color: #ffffff;
+  padding: 8px 20px;
+  margin: 5px;
+  margin-bottom: 10px;
+  color: #cc0000;
+  border-radius: 10px;
+  font-weight: 450;
+}
+
+.shopHeadSection .categoryBtn .catBtn:hover {
+  background-color: #cc0000;
+  color: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.shopProducts {
+  margin: 40px 0;
+}
+
+.shopProducts a:hover {
+  text-decoration: none;
+}
+
+.shopProducts .productCard {
+  -webkit-box-shadow: 1px 1px 4px 3px rgba(0, 12, 12, 0.09);
+          box-shadow: 1px 1px 4px 3px rgba(0, 12, 12, 0.09);
+  padding: 10px 0;
+  border-radius: 10px;
+  margin: 15px 0;
+  color: black;
+  text-decoration: none;
+}
+
+.shopProducts .productCard:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 1px 1px 4px 3px rgba(0, 12, 12, 0.3);
+          box-shadow: 1px 1px 4px 3px rgba(0, 12, 12, 0.3);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.shopProducts .productCard .myproductInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopProducts .productCard .myproductInfo .productImg {
+  width: 40%;
+}
+
+.shopProducts .productCard .myproductInfo .productImg img {
+  width: 100%;
+}
+
+.shopProducts .productCard .myproductInfo .productInfo {
+  padding: 10px;
+}
+
+.productDetail {
+  background-color: rgba(248, 248, 248, 0.8);
+  padding: 80px 0;
+}
+
+.productDetail .pdetails {
+  background-color: white;
+  margin: 20px 0;
+  padding: 40px 20px;
+  border-radius: 12px;
+  -webkit-box-shadow: 1px 1px 2px 2px rgba(230, 232, 233, 0.9);
+          box-shadow: 1px 1px 2px 2px rgba(230, 232, 233, 0.9);
+}
+
+.productDetail .pdetail_img img {
+  mix-blend-mode: multiply;
+}
+
+.news {
+  margin: 80px 0;
+}
+
+.news .newsCard {
+  -webkit-box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.09);
+          box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.news .newsCard .imgContainer img {
+  z-index: -100;
+}
+
+.news .newsCard .publishDate {
+  display: inline-block;
+  z-index: 100;
+  background: #cc0000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  margin: -40px 0 0 30px;
+}
+
+.news .newsCard .publishDate:hover {
+  background-color: #b20000;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.news .newsCard .newsInfo {
+  padding: 20px 30px;
+}
+
+.news .newsCard .newsIcons {
+  padding: 0 30px 30px 30px;
+}
+
+.news .newsCard .newsIcons .liked {
+  font-size: 20px;
+  padding: 0 10px 0 0;
+  border-right: 4px solid gray;
+}
+
+.news .newsCard .newsIcons .newsCat {
+  font-size: 20px;
+  padding: 0 0 0 10px;
+}
+
+.newsNav {
+  margin: 80px 0;
+}
+
+.newsNav .searchNews {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 20px;
+}
+
+.newsNav .searchNews input {
+  height: 60px;
+  padding: 20px;
+}
+
+.newsNav .searchNews .search {
+  width: 100%;
+  border: 2px solid #cc0000;
+  background-color: white;
+  padding: 15px;
+  color: #cc0000;
+  letter-spacing: 5px;
+  margin-top: 15px;
+}
+
+.newsNav .searchNews .search:hover {
+  background-color: #cc0000;
+  color: white;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.newsNav .newsCategorySection {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.newsNav .popularPosts {
+  background-color: rgba(0, 0, 0, 0.06);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.searchMbl {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .myproductInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .searchMbl {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 20px;
+  }
+  .searchMbl input {
+    height: 60px;
+    padding: 20px;
+  }
+  .searchMbl .search {
+    width: 100%;
+    border: 2px solid #cc0000;
+    background-color: white;
+    padding: 15px;
+    color: #cc0000;
+    letter-spacing: 5px;
+    margin-top: 15px;
+  }
+  .searchMbl .search:hover {
+    background-color: #cc0000;
+    color: white;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+}
+/*# sourceMappingURL=style.css.map */

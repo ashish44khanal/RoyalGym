@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navigation {
+  background-color: #000000;
+}
+.navigationMenu {
+  width: 100%;
+}
+.navbar {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 40px;
+}
+.nav-link {
+  color: white;
+}
+.nav-item {
+  padding: 0 5px;
+}
+.gymLogo {
+  width: 20%;
+}
+.navbar-brand {
+  margin-left: 10px;
+}
+.loginImg {
+  float: right;
+  margin-right: -15px;
+  width: 40%;
+}
+.logoContainer {
+  padding-top: 20px;
+}
+.customContact {
+  background-color: #0066ff;
+  margin-top: 10px;
+  width: 200px;
+  padding: 0 5px;
+  padding-top: 5px;
+  border-radius: 50px;
+}
+
+/* footer css starts here  */
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .loginImg {
+    width: 70%;
+  }
+}
