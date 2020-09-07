@@ -23,13 +23,18 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="news">
+
+                <!-- search for small screens  -->
                 <div class="searchNews searchMbl">
                         <input type="text" class="form-control" placeholder="Search Keyword">
                         <button class="search">Search</button>
                     </div>
+
                     <div class="newsCard">
                         <div class="imgContainer">
-                            <img src="images/blog1.png" alt="" class="img-fluid">
+                            <a href="Blog_details.php">
+                                <img src="images/blog1.png" alt="" class="img-fluid">
+                            </a>
                         </div>
                         <div class="dateContainer">
                             <div class="publishDate">
@@ -38,9 +43,47 @@
                             </div>
                         </div>
                         <div class="newsInfo">
-                            <h2 class="font-weight-bold">
-                            PUSH YOUR LIMITS FORWARD WE OFFER TO YOU
-                            </h2>
+                            <a href="Blog_details.php" class="normalA">
+                                <h2 class="font-weight-bold">
+                                PUSH YOUR LIMITS FORWARD WE OFFER TO YOU
+                                </h2>
+                            </a>
+                            <p class="text-muted">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                        </div>
+
+                        <div class="newsIcons">
+                            <table>
+                                <tr>
+                                    <td class="liked">
+                                        <i class="far fa-heart"></i> <span>12</span>
+                                    </td>
+
+                                    <td class="newsCat">
+                                        <i class="fas fa-user-alt"></i> <span> News Category</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="newsCard">
+                        <div class="imgContainer">
+                            <a href="Blog_details.php">
+                                <img src="images/blog1.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="dateContainer">
+                            <div class="publishDate">
+                                <h4>15</h4>
+                                <h6>Jan</h6>
+                            </div>
+                        </div>
+                        <div class="newsInfo">
+                            <a href="Blog_details.php" class="normalA">
+                                <h2 class="font-weight-bold">
+                                PUSH YOUR LIMITS FORWARD WE OFFER TO YOU
+                                </h2>
+                            </a>
                             <p class="text-muted">That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
                         </div>
 
@@ -61,6 +104,8 @@
 
                 </div>
             </div>
+
+
             <div class="col-md-4">
                 <div class="newsNav">
 

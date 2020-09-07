@@ -28,6 +28,13 @@
   border-top: 4px solid #cc0000;
   margin-top: 12px;
 }
+.normalA {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 .redBtn {
   @include royalBtn($redColor, $darkRed);
@@ -369,6 +376,14 @@
   display: none;
 }
 
+// nutrition guide starts
+
+.selectBox {
+  margin-top: 40px;
+  border-radius: 222px;
+  padding: 10px 20px;
+}
+
 @media screen and (max-width: 768px) {
   .myproductInfo {
     flex-direction: column;
@@ -396,6 +411,42 @@
         background-color: $redColor;
         color: white;
         transition: all 0.7s;
+      }
+    }
+  }
+}
+.nutritionArticle {
+  padding: 60px 15px;
+  .myArticle {
+    padding: 20px 0;
+  }
+  .requestForm {
+    padding: 0 20px;
+    .myForm {
+      padding: 20px;
+      background-color: $black2;
+      color: white;
+      .customInput {
+        padding: 15px;
+        color: white;
+        background: rgba($color: #ffffff, $alpha: 0.09);
+        border: none;
+        border-radius: 6px;
+        margin: 10px 0;
+      }
+      .formSelect {
+        option {
+          color: black;
+        }
+      }
+      .btnBlue {
+        width: 100%;
+        margin: 20px 0;
+        color: white;
+        padding: 10px;
+        background: $blue;
+        border-radius: 8px;
+        border: none;
       }
     }
   }

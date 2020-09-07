@@ -1,69 +1,65 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.navigation {
-  background-color: #000000;
-}
-
-.navigationMenu {
-  width: 100%;
-}
-
-.navbar {
-  width: 100%;
-  color: white;
-  text-align: center;
-  padding: 10px 40px;
-}
-
-.nav-link {
+header {
+  background-color: black;
   color: white;
 }
 
-.nav-item {
-  padding: 0 5px;
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 20px;
 }
 
-.gymLogo {
-  width: 20%;
+header nav .logoContainer {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-.navbar-brand {
+header nav .logoContainer img {
+  width: 2.5rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+header nav .customContact {
+  background-color: #0066ff;
+  padding: 5px 20px;
+  border-radius: 222px;
   margin-left: 10px;
 }
 
-.loginImg {
-  float: right;
-  margin-right: -15px;
-  width: 40%;
+.normalA {
+  color: black;
+  text-decoration: none;
 }
 
-.logoContainer {
-  padding-top: 20px;
-}
-
-.customContact {
-  background-color: #0066ff;
-  margin-top: 10px;
-  width: 200px;
-  padding: 0 5px;
-  padding-top: 5px;
-  border-radius: 50px;
-}
-
-/* footer css starts here  */
-@media screen and (max-width: 768px) {
-  .navbar-brand {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  .loginImg {
-    width: 70%;
-  }
+.normalA:hover {
+  text-decoration: none;
 }
 
 .redBtn {
@@ -511,6 +507,12 @@
   display: none;
 }
 
+.selectBox {
+  margin-top: 40px;
+  border-radius: 222px;
+  padding: 10px 20px;
+}
+
 @media screen and (max-width: 768px) {
   .myproductInfo {
     -webkit-box-orient: vertical;
@@ -548,5 +550,46 @@
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
   }
+}
+
+.nutritionArticle {
+  padding: 60px 15px;
+}
+
+.nutritionArticle .myArticle {
+  padding: 20px 0;
+}
+
+.nutritionArticle .requestForm {
+  padding: 0 20px;
+}
+
+.nutritionArticle .requestForm .myForm {
+  padding: 20px;
+  background-color: #050505;
+  color: white;
+}
+
+.nutritionArticle .requestForm .myForm .customInput {
+  padding: 15px;
+  color: white;
+  background: rgba(255, 255, 255, 0.09);
+  border: none;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.nutritionArticle .requestForm .myForm .formSelect option {
+  color: black;
+}
+
+.nutritionArticle .requestForm .myForm .btnBlue {
+  width: 100%;
+  margin: 20px 0;
+  color: white;
+  padding: 10px;
+  background: #0066ff;
+  border-radius: 8px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
